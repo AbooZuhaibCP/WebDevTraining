@@ -1,0 +1,45 @@
+*{
+    background-color: antiquewhite;
+    margin: 0px;
+    color: black;
+}
+.navbar{
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    float: left;
+}
+.companyName{
+    padding-top: 10px;
+    font-size: 25px;
+    float: left;
+}
+.rightNav{
+    float: right;
+    padding: 5px;
+    font-size: 20px;
+}
+.rightNav li{
+    float: left;
+    margin-right: 20px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    padding-top: 7px;
+}
+.container h1{
+    padding-top: 300px;
+    padding-left: 350px;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+
