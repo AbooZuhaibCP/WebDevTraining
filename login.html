@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./login.css">
+    <script src="./login.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -12,19 +13,19 @@
             <ul class="nav">
                 <li class="companyName"><a href="#">Company Name</a></li>
                 <div class="rightNav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./register.html">Register</a></li>
-                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="#">Login</a></li>
                 </div>
             </ul>
         </div>
         <div class="login">
             <p>Login</p>
-            <form action="">
+            <form action="" name="loginForm" onsubmit="return validateLogin()">
                 <label for="emailId">Email Id</label><br><br>
-                <input type="email" name="emailId" id="emailId"><br><br>
+                <input type="text" name="emailId" id="emailId"><br><br>
                 <label for="password">Password</label><br><br>
-                <input type="password"><br><br>
+                <input type="text" name="password"><br><br>
                 <input class = "submit" type="submit" value="Login"><br>
             </form>
         </div>

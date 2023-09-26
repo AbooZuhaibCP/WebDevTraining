@@ -76,3 +76,11 @@ hr{
     width: 100px;
     margin-left: 720px;
 }
+.register form .submit:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 720px;
+    color: white;
+    background-color: black;
+}

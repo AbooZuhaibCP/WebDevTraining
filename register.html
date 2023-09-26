@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./register.css">
+    <script src="./register.js"></script>
     <title>Register</title>
 </head>
 <body>
@@ -21,28 +22,28 @@
         <div class="register">
             <p>Register</p>
             <hr>
-            <form action="">
-                <label for="firstName">First Name : </label><br><br>
+            <form action="" name="registerForm" onsubmit="return validateRegister();">
+                <label>First Name : </label><br><br>
                 <input type="text" name="firstName"><br><br>
-                <label for="lastName">Last Name : </label><br><br>
+                <label>Last Name : </label><br><br>
                 <input type="text" name="lastName"><br><br>
-                <label for="dateOfBirth">Date of birth : </label><br><br>
-                <input type="date" name="dateOfBirth" id="dateOfBirth"><br><br>
-                <label for="emailId">Email Id : </label><br><br>
-                <input type="email" name="emailId" id="emailId"><br><br>
-                <label for="mobileNumber">Phone Number : </label><br><br>
-                <input type="tel" name="mobileNumber" id="mobileNumber" pattern="[0-9]{10}"><br><br>
-                <label for="address">Address : </label><br><br>
+                <label>Date of birth(DD/MM/YYYY) : </label><br><br>
+                <input type="text" name="dateOfBirth" id="dateOfBirth"><br><br>
+                <label>Email Id : </label><br><br>
+                <input type="text" name="emailId" id="emailId"><br><br>
+                <label>Phone Number : </label><br><br>
+                <input type="text" name="mobileNumber" id="mobileNumber"><br><br>
+                <label>Address : </label><br><br>
                 <textarea name="address" id="address" rows="5"></textarea><br><br>
-                <label for="designation">Employee Designation : </label> <br><br>
+                <label>Employee Designation : </label> <br><br>
                 <select name="designation" id="designation">
                     <option value="director">Director</option>
                     <option value="manager">Manager</option>
                     <option value="employee">Employee</option>
                     <option value="trainee">Trainee</option>
                 </select><br><br>
-                <label for="yearOfExperience">Years of experience : </label><br><br>
-                <input type="number"><br><br>
+                <label>Years of experience : </label><br><br>
+                <input type="text" name="yearsOfExperience"><br><br>
                 <input class = "submit" type="submit" value="Register">
             </form>
         </div>
